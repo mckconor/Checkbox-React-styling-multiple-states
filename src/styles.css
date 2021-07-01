@@ -1,0 +1,39 @@
+.App {
+  font-family: sans-serif;
+  text-align: left;
+}
+
+input {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+}
+
+.checked-input {
+  position: relative;
+}
+input + label {
+  z-index: -1;
+  background: white;
+  width: 12px;
+  height: 12px;
+  border: 1px solid black;
+  display: block;
+  position: absolute;
+  left: 4px;
+  color: transparent;
+  top: 3px;
+}
+input[value="0"] + label {
+  background-color: red;
+  background-image: url("https://lh3.googleusercontent.com/proxy/-y6DA7WeTcKFCUsZinU6cZgZ90mYfM3h2KZnAXgO0eVO6nxRzPW2O4eMMGBOJlJdfH3280iNRKg3gXRrAzhKbkf0tQuWKe0");
+  background-size: 12px;
+}
+input[value="1"] + label {
+  background-color: lightblue;
+  background-image: url("https://lh3.googleusercontent.com/proxy/I4QxToWjdGiSKIOpPjxObH8hZ3v0FQf4wZDf0qjuPKvoO5q_jPEgaqWleoXHl_QDbN-ztshlOhn1oO2Ua09rt0S3GOcGuuoZf0GxW6g");
+  background-size: 12px;
+}
+input[value="2"] + label {
+  background-color: yellow;
+}
